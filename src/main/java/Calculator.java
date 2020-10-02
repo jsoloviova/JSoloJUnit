@@ -1,5 +1,4 @@
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Calculator {
@@ -42,5 +41,12 @@ public class Calculator {
         product.put("prod3", 3);
         product.put("prod4", 4);
         return String.valueOf(product.get(prodName));
+    }
+
+    //Timeout
+    public long timeout(long n){
+        for (n = 0; n < 1000000000; n++){
+        }
+        return n;
     }
 }
