@@ -6,7 +6,7 @@ import org.junit.runners.Suite;
         CalculatorTest.class,
         AssertTrueTest.class,
         AssertSameTest.class,
-        AssertThat.class,
+        AssertThatTest.class,
         AssertNullTest.class,
         ParameterizedTest.class
 })

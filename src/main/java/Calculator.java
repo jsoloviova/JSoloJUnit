@@ -1,6 +1,3 @@
-import java.util.HashMap;
-import java.util.Map;
-
 public class Calculator {
     public Object siteElements;
 
@@ -34,13 +31,8 @@ public class Calculator {
     public String title = "Site Title";
 
     //AssertNullTest
-    public String prodID(String prodName) {
-        Map<String, Integer> product = new HashMap<String, Integer>();
-        product.put("prod1", 1);
-        product.put("prod2", 2);
-        product.put("prod3", 3);
-        product.put("prod4", 4);
-        return String.valueOf(product.get(prodName));
+    public String product(String prodName) {
+        return prodName;
     }
 
     //Timeout
