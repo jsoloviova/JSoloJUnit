@@ -9,35 +9,28 @@ public class AssertTrueTest {
     Calculator calculator = new Calculator();
 
     //isEven
-
-    @ValueSource(strings = {"1", "2"})
     @After
     @Test
-    public void isEven1(String[] m) {
-        System.out.println(m);
-        assertTrue(calculator.isEven(14, 66));
+    public void isEven1() {
         System.out.println("After");
+        assertTrue(calculator.isEven(14, 66));
     }
 
-    @After
     @Test
     public void isEven2() {
         assertTrue(calculator.isEven(15, 67));
     }
 
-    @After
     @Test
     public void isEven3() {
         assertTrue(calculator.isEven(-14, -66));
     }
 
-    @After
     @Test
     public void isEven4() {
         assertTrue(calculator.isEven(-5, 5));
     }
 
-    @After
     @Test
     public void isEven5() {
         assertFalse(calculator.isEven(21, 66));
@@ -47,19 +40,17 @@ public class AssertTrueTest {
     @Before
     @Test
     public void arrIsShort1() {
+        System.out.println("Before");
         Integer[] arr = {};
         assertTrue(calculator.arrIsShort(arr));
-        System.out.println("Before");
     }
 
-    @Before
     @Test
     public void arrIsShort2() {
         Integer[] arr = {1, 2, 3, 4, 5};
         assertTrue(calculator.arrIsShort(arr));
     }
 
-    @Before
     @Test
     public void arrIsShort3() {
         Integer[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 11, 12};

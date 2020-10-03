@@ -49,4 +49,10 @@ public class Calculator {
         }
         return n;
     }
+
+    //Parameterized
+    public boolean isOdd(int t){
+        return t % 2 == 1;
+    }
+
 }
